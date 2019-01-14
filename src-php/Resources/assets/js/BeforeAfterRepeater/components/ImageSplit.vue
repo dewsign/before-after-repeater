@@ -1,11 +1,26 @@
 <template>
     <section>
         <div class="image-split">
-            <img draggable="false" :src="originalimage" :alt="originalalt">
-            <div class="image-split__overlay" ref="overlayImage">
-                <img draggable="false" :src="overlayimage" :alt="overlayalt">
+            <img
+                :src="originalimage"
+                :alt="originalalt"
+                draggable="false"
+            >
+            <div
+                ref="overlayImage"
+                class="image-split__overlay"
+            >
+                <img
+                    :src="overlayimage"
+                    :alt="overlayalt"
+                    draggable="false"
+                >
             </div>
-            <div class="drag-token" ref="overlayToken" v-touch-alert:pan="imageSplit"></div>
+            <div
+                v-touch-alert:pan="imageSplit"
+                ref="overlayToken"
+                class="drag-token"
+            />
         </div>
     </section>
 </template>
