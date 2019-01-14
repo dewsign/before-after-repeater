@@ -8,3 +8,7 @@ A before/after slider repeater block for [Dewsign's Nova Repeater Blocks](https:
 
 `php artisan migrate`
 
+Then publish the compiled files.
+
+`php artisan vendor:publish --provider="Dewsign\BeforeAfterRepeater\Providers\PackageServiceProvider"`
+
