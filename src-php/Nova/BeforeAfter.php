@@ -52,6 +52,8 @@ class BeforeAfter extends Resource
     public function fields(Request $request)
     {
         return [
+            Text::make('Title'),
+            Text::make('Subtitle'),
             CloudinaryImage::make('Original Image'),
             Text::make('Original Alt'),
             CloudinaryImage::make('Overlay Image'),

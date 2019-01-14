@@ -15,6 +15,8 @@ class CreateBeforeAfterBlocksTable extends Migration
     {
         Schema::create('nrb_before_after_blocks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('subtitle');
             $table->text('original_image');
             $table->string('original_alt');
             $table->text('overlay_image');
