@@ -9,9 +9,13 @@ export default {
     },
     external: [
         'vue',
+        'hammerjs',
+        'collect.js',
     ],
     plugins: [
         RollupPluginVue(),
-        RollupPluginBabel(),
+        RollupPluginBabel({
+            exclude: 'node_modules/**',
+        }),
     ],
 }
