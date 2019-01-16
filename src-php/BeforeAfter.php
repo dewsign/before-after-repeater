@@ -15,23 +15,19 @@ class BeforeAfter extends Model
 
     public function getStandardOriginalImageAttribute()
     {
-        if (!$this->original_image) {
-            return null;
-        }
-
-        return cloudinary_image($this->original_image, [
-            "width" => 500,
-        ]);
+        return $this->getImage($this->original_image, 'before-after-original');
     }
 
-        public function getStandardOverlayImageAttribute()
+    public function getStandardOverlayImageAttribute()
     {
-        if (!$this->overlay_image) {
-            return null;
-        }
+        return $this->getImage($this->overlay_image, 'before-after-overlay');
+    }
 
-        return cloudinary_image($this->overlay_image, [
-            "width" => 500,
-        ]);
+    public function getImage(string $image, string $style = 'before-after', array $params = [])
+    {
+        return config(
+            "repeater-blocks.images.processors.{$style}",
+            config("repeater-blocks.images.processors.default")
+        )::get($image, $params);
     }
 }

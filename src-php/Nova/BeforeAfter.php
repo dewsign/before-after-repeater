@@ -54,9 +54,11 @@ class BeforeAfter extends Resource
         return [
             Text::make('Title'),
             Text::make('Subtitle'),
-            CloudinaryImage::make('Original Image'),
+            config('repeater-blocks.images.field')::make('Original Image')
+                ->disk(config('repeater-blocks.images.disk')),
             Text::make('Original Alt'),
-            CloudinaryImage::make('Overlay Image'),
+            config('repeater-blocks.images.field')::make('Overlay Image')
+                ->disk(config('repeater-blocks.images.disk')),
             Text::make('Overlay Alt'),
         ];
     }
