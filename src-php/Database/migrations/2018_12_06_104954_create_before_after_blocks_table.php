@@ -15,12 +15,12 @@ class CreateBeforeAfterBlocksTable extends Migration
     {
         Schema::create('nrb_before_after_blocks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('subtitle');
+            $table->string('title')->nullable();
+            $table->string('subtitle')->nullable();
             $table->text('original_image');
-            $table->string('original_alt');
+            $table->string('original_alt')->nullable();
             $table->text('overlay_image');
-            $table->string('overlay_alt');
+            $table->string('overlay_alt')->nullable();
             $table->timestamps();
         });
     }

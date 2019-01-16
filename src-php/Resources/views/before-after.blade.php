@@ -5,8 +5,8 @@
     <image-split
         originalimage="{{ $repeaterContent->standardOriginalImage }}"
         overlayimage="{{ $repeaterContent->standardOverlayImage }}"
-        originalalt="{{ $repeaterContent->original_alt }}"
-        overlayalt="{{ $repeaterContent->overlay_alt }}"
+        originalalt="{{ $repeaterContent->original_alt ?? '' }}"
+        overlayalt="{{ $repeaterContent->overlay_alt ?? '' }}"
     >
     </image-split>
 </div>
