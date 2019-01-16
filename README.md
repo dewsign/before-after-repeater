@@ -6,7 +6,7 @@ A before/after image comparison repeater block for [Dewsign's Nova Repeater Bloc
 
 ## Installation & Usage
 
-This package requires on two installations, a composer package for the laravel side of things, and a npm package for the vue component.
+This package requires on two installations, a composer package for the Laravel side of things, and a npm package for the Vue.js component.
 
 `composer require dewsign/before-after-repeater`
 
