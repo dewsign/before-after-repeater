@@ -11,6 +11,8 @@ export default {
         'vue',
         'hammerjs',
         'collect.js',
+        'vue-runtime-helpers/normalize-component.js',
+        'vue-runtime-helpers/inject-style/browser.js',
     ],
     plugins: [
         RollupPluginVue(),

@@ -10,6 +10,11 @@
         "prepublish": "npm run build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "files": [
+        "src-js/dist",
+        "readme.md",
+        "license"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/dewsign/before-after-repeater.git"
@@ -27,7 +32,6 @@
         "babel-core": "^6.26.3",
         "babel-eslint": "^8.2.6",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
-        "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-es2015-rollup": "^3.0.0",
         "eslint": "^5.1.0",
         "eslint-config-airbnb-base": "^13.0.0",
