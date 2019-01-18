@@ -1,7 +1,7 @@
-import ImageSplit from './ImageSplit.vue'
+import BeforeAfter from './BeforeAfter.vue'
 
 export default {
     install(Vue) {
-        Vue.component(ImageSplit.name, ImageSplit)
+        Vue.component(BeforeAfter.name, BeforeAfter)
     },
 }
