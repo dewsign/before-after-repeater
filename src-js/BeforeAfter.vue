@@ -22,7 +22,7 @@
             </div>
 
             <div
-                v-touch-alert:pan="BeforeAfter"
+                v-touch-alert:pan="beforeAfter"
                 ref="afterToken"
                 class="drag-token"
             />
@@ -75,7 +75,7 @@ export default {
     },
 
     methods: {
-        BeforeAfter(value) {
+        beforeAfter(value) {
             const afterWidth = parseInt(this.afterImage.offsetWidth, 10)
             this.setMaxWidth(afterWidth)
             this.setLastWidth(afterWidth, value)
