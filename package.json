@@ -1,6 +1,6 @@
 {
     "name": "vue-before-after-slider",
-    "version": "1.1.9",
+    "version": "1.1.10",
     "description": "A before/after slider repeater block for [Dewsign's Nova Repeater Blocks](https://github.com/dewsign/nova-repeater-blocks) to compare two images.",
     "main": "dist-js/index.js",
     "scripts": {
