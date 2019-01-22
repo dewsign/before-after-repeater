@@ -10,10 +10,12 @@ use Illuminate\Support\Facades\File;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Silvanite\NovaFieldCloudinary\Fields\CloudinaryImage;
 use Dewsign\NovaRepeaterBlocks\Traits\IsRepeaterBlockResource;
+use Dewsign\NovaRepeaterBlocks\Traits\ResourceCanBeContainerised;
 
 class BeforeAfter extends Resource
 {
     use IsRepeaterBlockResource;
+    use ResourceCanBeContainerised;
 
     /**
      * The model the resource corresponds to.

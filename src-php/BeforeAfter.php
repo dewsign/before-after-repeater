@@ -4,10 +4,12 @@ namespace Dewsign\BeforeAfterRepeater;
 
 use Illuminate\Database\Eloquent\Model;
 use Dewsign\NovaRepeaterBlocks\Traits\IsRepeaterBlock;
+use Dewsign\NovaRepeaterBlocks\Traits\CanBeContainerised;
 
 class BeforeAfter extends Model
 {
     use IsRepeaterBlock;
+    use CanBeContainerised;
 
     protected $table = 'nrb_before_after_blocks';
 
