@@ -10,7 +10,7 @@ This package requires on two installations, a composer package for the Laravel s
 
 `composer require dewsign/before-after-repeater`
 
-`npm i vue-image-split-slider`
+`npm i vue-before-after-slider`
 
 `php artisan migrate`
 
@@ -19,9 +19,9 @@ Register the Vue component:
 //resources/js/app.js
 //...
 
-import VueImageSplitSlider from 'vue-image-split-slider'
+import BeforeAfter from 'BeforeAfter'
 
-Vue.use(VueImageSplitSlider)
+Vue.use(BeforeAfter)
 ```
 
 To use, add this repeater to a page and set the original and overlay images. If required, you can set a title and a subtitle which will output above the block.
