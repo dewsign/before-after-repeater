@@ -1,5 +1,6 @@
 <?php
 
 return [
-    // blank for now...
+    "width" => 800,
+    "height" => 600,
 ];

@@ -24,4 +24,6 @@ import BeforeAfter from 'BeforeAfter'
 Vue.use(BeforeAfter)
 ```
 
+You can change the image sizes in the `before-after-repeater.php` config file.
+
 To use, add this repeater to a page and set the original and overlay images. If required, you can set a title and a subtitle which will output above the block.

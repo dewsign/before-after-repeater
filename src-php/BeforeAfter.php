@@ -17,12 +17,18 @@ class BeforeAfter extends Model
 
     public function getStandardOriginalImageAttribute()
     {
-        return $this->getImage($this->original_image, 'before-after-original');
+        return $this->getImage($this->original_image, 'before-after-original', [
+                "width" => config('before-after-repeater.width'),
+                "height" => config('before-after-repeater.height')
+            ]);
     }
 
     public function getStandardOverlayImageAttribute()
     {
-        return $this->getImage($this->overlay_image, 'before-after-overlay');
+        return $this->getImage($this->overlay_image, 'before-after-overlay', [
+            "width" => config('before-after-repeater.width'),
+            "height" => config('before-after-repeater.height')
+        ]);
     }
 
     public function getImage(string $image, string $style = 'before-after', array $params = [])
